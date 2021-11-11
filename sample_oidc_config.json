@@ -1,0 +1,6 @@
+[{
+  "provider": "Okta",
+  "issuer": "https://dev-11217708.okta.com/oauth2/aus2khlgfcJXFj2by5d7",
+  "audience": "0oa2jftrgkqTL2v6B5d7",
+  "principalIdField": "email"
+}]
