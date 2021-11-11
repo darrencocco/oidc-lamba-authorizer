@@ -1,0 +1,6 @@
+[{
+  "provider": "Okta",
+  "issuer": "https://dev-271828182.okta.com/oauth2/0123456789abcdef",
+  "audience": "deadbeef",
+  "principalIdField": "email"
+}]
