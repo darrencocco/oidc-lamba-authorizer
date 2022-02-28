@@ -22,7 +22,9 @@ public class V1 implements RequestHandler<APIGatewayCustomAuthorizerEvent, IamPo
 
     @Override
     public IamPolicyResponseV1 handleRequest(APIGatewayCustomAuthorizerEvent event, Context context) {
-        String token = event.getAuthorizationToken();
+        context.getLogger().log(event.toString());
+        String token = event.getAuthorizationToken() != null ? event.getAuthorizationToken() : event.getIdentitySource();
+
 
         TokenProcessor tokenProcessor = null;
         try {
